@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #b6b5b5;
+}
+header {
+    background: #3b4b32;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+}
+.hero {
+    text-align: center;
+    padding: 1rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+.card{
+    background: #c2d69d;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+footer {
+    background: #292222;
+    color: #ac9d8c;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+/* Tablet >600px */
+@media (min-width: 600px){
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* Desktop >1024px*/
+@media (min-width: 1024px){
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero{
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+}
